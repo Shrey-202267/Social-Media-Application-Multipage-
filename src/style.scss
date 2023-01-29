@@ -1,0 +1,259 @@
+
+
+
+.theme-dark{
+
+    .navbar{
+        background: #222;
+        color: whitesmoke;
+        border-color: #444;
+
+        .left{
+
+            span{
+                color: #fff;
+            }
+
+            .search{
+                border-color: #444;
+
+                input{
+                    background-color: transparent;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+
+    .leftbar{
+
+        background:#222;
+        color: whitesmoke;
+
+
+        .container{
+
+            hr{
+                background-color: #444;
+            }
+
+            .menu{
+                span{
+                    color: lightgray;
+                }
+            }
+        }
+    }
+
+
+    .rightbar{
+        
+        background: #333;
+        
+
+        .container{
+
+            .item{
+                background-color: #222;
+
+
+                span{
+                    color: lightgray;
+                }
+
+                .user{
+
+                    .userinfo{
+                       
+                        p{
+                            color: lightgray;
+                        }
+
+                        span{
+                            color: whitesmoke;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .home{
+        background: #333;
+
+        .posts{
+
+            .post{
+
+                background-color: #222;
+                color: whitesmoke;
+                border: #444; 
+                
+                .comments{
+
+                    .write{
+
+                        input{
+                            color: whitesmoke;
+                            border-color: #444;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    .profile{
+        background-color: #333;
+
+        .profileContainer{
+            
+            .Info{
+                background: #222;
+            color: whitesmoke;
+            }
+
+            .posts{
+
+                .post{
+                background: #222;
+                color: whitesmoke;
+
+                .container{
+
+                    .comments{
+
+                        .write{
+
+                            input{
+                                color: white;
+                                border-color: #444;
+                            }
+                        }
+
+
+                    }
+                }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+.theme-light{
+
+    .navbar{
+        background: #fff;
+        color: #000;
+        border-color: lightgray;
+
+        .left{
+
+            span{
+                color: darkblue;
+            }
+
+            .search{
+                border-color: lightgray;
+
+                input{
+                    background-color:transparent;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+
+    .leftbar{
+
+        background: #fff;
+        color: #000;
+
+
+        .container{
+
+            hr{
+                background-color: lightgray;
+            }
+
+            .menu{
+                span{
+                    color: #555;
+                }
+            }
+        }
+    }
+
+
+    .rightbar{
+        
+        background: #f6f3f3;
+        
+
+        .container{
+
+            .item{
+                background-color: #fff;
+
+
+                span{
+                    color: #555;
+                }
+
+                .user{
+
+                    .userinfo{
+                       
+                        p{
+                            color: #555;
+                        }
+
+                        span{
+                            color: #000;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .home{
+        background: #f6f3f3;
+
+        .posts{
+
+            .post{
+
+                background-color: #fff;
+                color: #000;
+                border: lightgray;
+            }
+        }
+    }
+
+    
+}
+
+
+@mixin mobile{
+    @media (max-width:480px) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width:960px) {
+        @content;
+    }
+}
